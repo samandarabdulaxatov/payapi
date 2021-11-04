@@ -100,6 +100,14 @@ body {
   background-size: 780px 780px;
 }
 
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
 .site-header__button{
   position: absolute;
   z-index: 5;
@@ -556,6 +564,7 @@ border-radius: 8px;
   list-style: none;
   margin-top: 43px;
   margin-bottom: 41px;
+  text-align: center;
 }
 
 .footer-item {
@@ -580,7 +589,7 @@ border-radius: 8px;
 
 .list-icon {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -590,6 +599,11 @@ border-radius: 8px;
 .icons {
   fill: #FBFCFE;
   transition: 0.3s ease;
+}
+
+.icons:nth-child(1) {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .icons:hover {
@@ -1023,6 +1037,10 @@ border-radius: 8px;
 
   .footer-list {
     margin-left: -370px;
+  }
+
+  .icons:nth-child(1) {
+    margin: 0;
   }
 
 }
